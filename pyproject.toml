@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lyrics-highlighter"
+version = "0.1.0"
+description = "A desktop app for syncing lyrics to audio and exporting lyric videos"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyQt6>=6.6"]
+
+[project.scripts]
+lyrics-highlighter = "lyrics_highlighter.ui:run"
+
+[tool.setuptools.packages.find]
+include = ["lyrics_highlighter*"]
